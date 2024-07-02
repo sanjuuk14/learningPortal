@@ -35,26 +35,51 @@ const MyNavbar = () => {
               <Link to="about" style={{ textDecoration: "none" }}>
                 <Nav.Link href="about">About</Nav.Link>
               </Link>
+             
               <NavDropdown title="Codes" id="collapsible-nav-dropdown">
-                <Link to="ccodes" style={{ textDecoration: "none" }}>
-                  <NavDropdown.Item href="ccodes">C codes</NavDropdown.Item>
-                </Link>
-                <Link to="javacodes" style={{ textDecoration: "none" }}>
-                  <NavDropdown.Item href="javacodes">
-                    Java codes
-                  </NavDropdown.Item>
-                </Link>
+               
+                
                 <Link to="pythoncodes" style={{ textDecoration: "none" }}>
                   <NavDropdown.Item href="pythoncodes">
                     Python Codes
                   </NavDropdown.Item>
                 </Link>
+             
+                <Link to="ccodes" style={{ textDecoration: "none" }}>
+                  <NavDropdown.Item href="ccodes">C codes</NavDropdown.Item>
+                </Link>
+             
+                <Link to="javacodes" style={{ textDecoration: "none" }}>
+                  <NavDropdown.Item href="javacodes">
+                    Java codes
+                  </NavDropdown.Item>
+                </Link>
+             
                 <Link to="compiler" style={{ textDecoration: "none" }}>
                   <NavDropdown.Item href="compiler">
                    Compiler
                   </NavDropdown.Item>
                 </Link>
               </NavDropdown>
+              <NavDropdown title="Compilers" id="collapsible-nav-dropdown">
+               
+                
+
+              <Link to="compiler" style={{ textDecoration: "none" }}>
+                  <NavDropdown.Item href="compiler">
+                     C Compiler
+                  </NavDropdown.Item>
+                </Link>
+             
+                
+                
+                <Link to="pythoncompiler" style={{ textDecoration: "none" }}>
+                  <NavDropdown.Item href="pythoncompiler">
+                   Python Compiler
+                  </NavDropdown.Item>
+                </Link>
+              </NavDropdown>
+
               <NavDropdown title="Notes" id="collapsible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Java</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Python</NavDropdown.Item>

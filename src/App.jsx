@@ -9,6 +9,7 @@ import JavaCodes from "./pages/JavaCodes";
 import PythonCodes from "./pages/PythonCodes";
 import C_Codes from "./pages/C_Codes";
 import Compiler from "./components/Compiler";
+import PythonCompiler from "./components/PythonCompiler";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/pythoncodes" element={<PythonCodes />} />
         <Route path="/ccodes" element={<C_Codes />} />
         <Route path="/compiler" element={<Compiler />} />
+        <Route path="/pythoncompiler" element={<PythonCompiler />} />
       </Routes>
       <Footer />
     </>
