@@ -92,16 +92,17 @@ int main(){
       int n;
       printf("enter the Star patter length:- ");
       scanf("%d",&n);
-
-for(int i = 1;i<=n;i++){
-      for(int j=1;j<=n;j++){
+int i = 1;
+int j =1;
+for(i = 1;i<=n;i++){
+      for(j=1;j<=n;j++){
         if((i==j) || (n-i+1==j)){
             printf("*");
         }else {
         printf(" ");
         }
         }
-      printf("\n");
+      printf(" ");
       }
 }`,
   },
@@ -114,9 +115,9 @@ for(int i = 1;i<=n;i++){
 int main(){
 
       int A[5]={10,20,12,4,9};
-
-       for(int i=0;i<5;i++){
-           printf("%d\n",A[i]);
+	int i =0;
+       for(i=0;i<5;i++){
+           printf("%d ",A[i]);
       }
 
       int max=A[0];
@@ -124,7 +125,7 @@ int main(){
       int imax;
       int imin;
 
-      for(int i=0;i<5;i++){
+      for( i=0;i<5;i++){
            if(max<A[i]){
             max=A[i];
             imax = i;
@@ -139,15 +140,16 @@ int main(){
         A[imax] = min;
 
       printf("max = %d",max);
-      printf("\nmin = %d",min);
+      printf("min = %d",min);
 
-      printf("\nafter swap max and min numbers : -");
-       for(int i=0;i<5;i++){
-           printf("\n%d",A[i]);
+      printf("after swap max and min numbers : ");
+       for(i=0;i<5;i++){
+           printf("%d ",A[i]);
       }
 
 return 0;
 }
+
 `,
   },
 ];

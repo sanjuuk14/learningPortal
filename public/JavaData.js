@@ -12,13 +12,11 @@ Platform: Any hardware or software environment in which a program runs, is known
     id: 1.2,
     title: "Hello World",
     details: "How to print hello world ?",
-    code: `#include <stdio.h>
-
-int main() {
-	// Your code goes here
-	printf("Hello, World!");
-
-	return 0;
-}`,
+    code: `public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+`,
   },
 ];

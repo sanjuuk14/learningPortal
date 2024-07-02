@@ -8,7 +8,7 @@ import About from "./pages/About";
 import JavaCodes from "./pages/JavaCodes";
 import PythonCodes from "./pages/PythonCodes";
 import C_Codes from "./pages/C_Codes";
-import Compiler from "./pages/Compiler";
+import Compiler from "./components/Compiler";
 
 function App() {
   return (

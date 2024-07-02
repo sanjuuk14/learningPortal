@@ -84,93 +84,94 @@ const JavaCodes = () => {
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
-                <Accordion.Header>2. Basic</Accordion.Header>
+                <Accordion.Header>2. Array</Accordion.Header>
                 <Accordion.Body>
                   <ol>
                     <li>
                       <Button variant="white" value="0" onClick={changeId}>
-                        Introduction
+                        test 1
                       </Button>
                     </li>
                     <li>
-                      <Button variant="white" value="1" onClick={changeId}>
-                        Hello world
+                      <Button variant="white" value="#" onClick={changeId}>
+                        test 2
                       </Button>
                     </li>
 
                     <li>
-                      <Button variant="white" value="2" onClick={changeId}>
-                        add two numbers
+                      <Button variant="white" value="#" onClick={changeId}>
+                      test 3
                       </Button>
                     </li>
                     <li>
-                      <Button variant="white" value="3" onClick={changeId}>
-                        check number is palindrom or not
+                      <Button variant="white" value="#" onClick={changeId}>
+                      test 4
                       </Button>
                     </li>
                   </ol>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
-                <Accordion.Header>3. basic</Accordion.Header>
+                <Accordion.Header>3. String</Accordion.Header>
                 <Accordion.Body>
                   <ol>
                     <li>
                       <Button variant="white" value="0" onClick={changeId}>
-                        Introduction
+                      test 1
                       </Button>
                     </li>
                     <li>
                       <Button variant="white" value="1" onClick={changeId}>
-                        Hello world
+                      test 2
                       </Button>
                     </li>
 
                     <li>
                       <Button variant="white" value="2" onClick={changeId}>
-                        add two numbers
+                      test 3
                       </Button>
                     </li>
                     <li>
                       <Button variant="white" value="3" onClick={changeId}>
-                        check number is palindrom or not
+                      test 4
                       </Button>
                     </li>
                   </ol>
                 </Accordion.Body>
               </Accordion.Item>
+            
+            
+            
               <Accordion.Item eventKey="3">
-                <Accordion.Header>4. Basic</Accordion.Header>
-                <Accordion.Body>Basic</Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="4">
-                <Accordion.Header>5. Basic</Accordion.Header>
+                <Accordion.Header>4. Files</Accordion.Header>
                 <Accordion.Body>
                   <ol>
                     <li>
                       <Button variant="white" value="0" onClick={changeId}>
-                        Introduction
+                      test 1
                       </Button>
                     </li>
                     <li>
                       <Button variant="white" value="1" onClick={changeId}>
-                        Hello world
+                      test 2
                       </Button>
                     </li>
 
                     <li>
                       <Button variant="white" value="2" onClick={changeId}>
-                        add two numbers
+                      test 3
                       </Button>
                     </li>
                     <li>
                       <Button variant="white" value="3" onClick={changeId}>
-                        check number is palindrom or not
+                      test 4
                       </Button>
                     </li>
                   </ol>
                 </Accordion.Body>
               </Accordion.Item>
+
+
             </Accordion>
           </Col>
           <Col>
@@ -244,15 +245,38 @@ const JavaCodes = () => {
               id="dropdown-button-dark-example1"
               variant="secondary"
             >
-              2. Basic
+              2. Array
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="w-100  p-0" onClick={handleClose}>
               <ol className="m-0">
                 <li>
                   <Dropdown.Item>
-                    <Button variant="" value="1" onClick={changeId}>
-                      Primary
+                    <Button variant="" value="#" onClick={changeId}>
+                      test 1
+                    </Button>
+                  </Dropdown.Item>
+                </li>
+
+
+                <li>
+                  <Dropdown.Item>
+                    <Button variant="" value="#" onClick={changeId}>
+                      test 2
+                    </Button>
+                  </Dropdown.Item>
+                </li>
+                <li>
+                  <Dropdown.Item>
+                    <Button variant="" value="#" onClick={changeId}>
+                      test 3
+                    </Button>
+                  </Dropdown.Item>
+                </li>
+                <li>
+                  <Dropdown.Item>
+                    <Button variant="" value="#" onClick={changeId}>
+                      test 4
                     </Button>
                   </Dropdown.Item>
                 </li>

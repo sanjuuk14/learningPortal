@@ -3,14 +3,12 @@ import { Col, Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import { CData } from "../../public/CData";
 import Dropdown from "react-bootstrap/Dropdown";
-
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
-
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { right } from "@popperjs/core";
-import { Link } from "react-router-dom";
+import Compiler from "../components/Compiler";
 
 const C_Codes = () => {
   const [data, setData] = useState(CData);
@@ -21,7 +19,7 @@ const C_Codes = () => {
     setId(el.target.value);
   }
 
-  // ofcanvas
+  // offcanvas
 
   const [show, setShow] = useState(false);
 
@@ -67,6 +65,7 @@ const C_Codes = () => {
         <Row className="g-3">
           <Col xs={12} sm={4} lg={4} className="accordion">
             <Accordion defaultActiveKey="0">
+            
               <Accordion.Item eventKey="0">
                 <Accordion.Header>1. Basic </Accordion.Header>
                 <Accordion.Body className="p-0">
@@ -91,6 +90,8 @@ const C_Codes = () => {
                   </ol>
                 </Accordion.Body>
               </Accordion.Item>
+            
+            
               <Accordion.Item eventKey="1">
                 <Accordion.Header>2. Star Pattern</Accordion.Header>
                 <Accordion.Body>
@@ -103,6 +104,8 @@ const C_Codes = () => {
                   </ol>
                 </Accordion.Body>
               </Accordion.Item>
+             
+             
               <Accordion.Item eventKey="2">
                 <Accordion.Header>3. Array</Accordion.Header>
                 <Accordion.Body>
@@ -112,36 +115,59 @@ const C_Codes = () => {
                         Min & max-swap
                       </Button>
                     </li>
+                    <li>
+                      <Button variant="white" value="#" onClick={changeId}>
+                        test2
+                      </Button>
+                    </li>
                   </ol>
                 </Accordion.Body>
               </Accordion.Item>
+             
+             
               <Accordion.Item eventKey="3">
-                <Accordion.Header>Basic</Accordion.Header>
-                <Accordion.Body>Basic</Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="4">
-                <Accordion.Header>5.Basic</Accordion.Header>
+                <Accordion.Header>4.Number Operations</Accordion.Header>
                 <Accordion.Body>
-                  <ol>
+
+                <ol>
                     <li>
                       <Button variant="white" value="3.2" onClick={changeId}>
-                        Introduction2
+                        test 1
                       </Button>
                     </li>
                     <li>
                       <Button variant="white" value="1" onClick={changeId}>
-                        Hello world
+                       test 2
+                      </Button>
+                    </li>
+                    </ol>
+                </Accordion.Body>
+              </Accordion.Item>
+             
+             
+              <Accordion.Item eventKey="4">
+                <Accordion.Header>5.Sorting</Accordion.Header>
+                <Accordion.Body>
+                  <ol>
+                    <li>
+                      <Button variant="white" value="3.2" onClick={changeId}>
+                        test 1
+                      </Button>
+                    </li>
+                    <li>
+                      <Button variant="white" value="1" onClick={changeId}>
+                       test 2
                       </Button>
                     </li>
 
                     <li>
                       <Button variant="white" value="2" onClick={changeId}>
-                        add two numbers
+                        test 3
                       </Button>
                     </li>
                     <li>
                       <Button variant="white" value="3" onClick={changeId}>
-                        check number is palindrom or not
+                        test 4
                       </Button>
                     </li>
                   </ol>
@@ -149,6 +175,8 @@ const C_Codes = () => {
               </Accordion.Item>
             </Accordion>
           </Col>
+
+
           <Col>
             {data
               .filter((javaData) => javaData.id == id)
@@ -165,7 +193,7 @@ const C_Codes = () => {
                       fontFamily: "sans-serif",
                     }}
                     className="w-100  bg-dark text-white border-0 rounded-3"
-                    rows={filteredJavaData.code.split(/\r\n|\r|\n/).length}
+                    rows={filteredJavaData.code.split(/\r\\n|\r|\n/).length}
                   >
                     {filteredJavaData.code}
                   </textarea>
@@ -173,16 +201,17 @@ const C_Codes = () => {
               ))}
           </Col>
         </Row>
+       
+       {/* Compiler section */}
         <Row>
           <Col className="mt-5">
           <div>
-          comiler not found
-
+          Run you code ---
+          <Compiler/>
           </div>
-      
-            
           </Col>
         </Row>
+        {/* compiler section end  */}
         
       </Container>
       {/*-------------- OFFCANVAS COMPONENT START-------------------- */}
@@ -217,9 +246,19 @@ const C_Codes = () => {
                     </Button>
                   </Dropdown.Item>
                 </li>
+
+                <li>
+                  <Dropdown.Item>
+                    <Button variant="" value="1.3" onClick={changeId}>
+                      Check Prime
+                    </Button>
+                  </Dropdown.Item>
+                </li>
               </ol>
             </Dropdown.Menu>
           </Dropdown>
+   
+   
           <Dropdown className="mt-1" data-bs-theme="dark">
             <Dropdown.Toggle
               className="w-100"
@@ -241,6 +280,8 @@ const C_Codes = () => {
               </ol>
             </Dropdown.Menu>
           </Dropdown>
+         
+         
           <Dropdown className="mt-1" data-bs-theme="dark">
             <Dropdown.Toggle
               className="w-100"
@@ -262,6 +303,57 @@ const C_Codes = () => {
               </ol>
             </Dropdown.Menu>
           </Dropdown>
+
+
+                   
+         
+          <Dropdown className="mt-1" data-bs-theme="dark">
+            <Dropdown.Toggle
+              className="w-100"
+              id="dropdown-button-dark-example1"
+              variant="secondary"
+            >
+              4. Number Operation
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className="w-100  p-0" onClick={handleClose}>
+              <ol className="m-0">
+                <li>
+                  <Dropdown.Item>
+                    <Button variant="" value="#" onClick={changeId}>
+                      test 1
+                    </Button>
+                  </Dropdown.Item>
+                </li>
+              </ol>
+            </Dropdown.Menu>
+          </Dropdown>
+
+
+
+          <Dropdown className="mt-1" data-bs-theme="dark">
+            <Dropdown.Toggle
+              className="w-100"
+              id="dropdown-button-dark-example1"
+              variant="secondary"
+            >
+              5. Sorting
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className="w-100  p-0" onClick={handleClose}>
+              <ol className="m-0">
+                <li>
+                  <Dropdown.Item>
+                    <Button variant="" value="#" onClick={changeId}>
+                      test 1
+                    </Button>
+                  </Dropdown.Item>
+                </li>
+              </ol>
+            </Dropdown.Menu>
+          </Dropdown>
+
+
         </Offcanvas.Body>
       </Offcanvas>
       {/*-------------- OFFCANVAS COMPONENT END-------------------- */}
